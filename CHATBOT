@@ -1,0 +1,773 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOzySsGlvSvZZozSkmQyXUX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "a926382e458242c5a0079ff2caa37500": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_859a9aa92552429c96551456a40e17dd",
+              "IPY_MODEL_bf96c47ddf5f4fbab68a3b366cdde35f",
+              "IPY_MODEL_0acb3f47ec7f483a98f998b54489a048"
+            ],
+            "layout": "IPY_MODEL_6a6d034b7b7d40a18ba90921d8a6c802"
+          }
+        },
+        "859a9aa92552429c96551456a40e17dd": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_1c8b930b561d4a99954a5400feb31498",
+            "placeholder": "​",
+            "style": "IPY_MODEL_c052ff5a7631453c8215bd5fd5bf46ae",
+            "value": "Loading checkpoint shards: 100%"
+          }
+        },
+        "bf96c47ddf5f4fbab68a3b366cdde35f": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_1ce16b63d46d46fa8191b0f7bfd4cc4c",
+            "max": 2,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_c5206dfc8e57420f9320207f0440bd6a",
+            "value": 2
+          }
+        },
+        "0acb3f47ec7f483a98f998b54489a048": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_64f60d468e8d4a36b078e1938ee65a93",
+            "placeholder": "​",
+            "style": "IPY_MODEL_3f003c432c864b67835f5afc5e0c977a",
+            "value": " 2/2 [00:01&lt;00:00,  1.01it/s]"
+          }
+        },
+        "6a6d034b7b7d40a18ba90921d8a6c802": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "1c8b930b561d4a99954a5400feb31498": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "c052ff5a7631453c8215bd5fd5bf46ae": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "1ce16b63d46d46fa8191b0f7bfd4cc4c": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "c5206dfc8e57420f9320207f0440bd6a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "64f60d468e8d4a36b078e1938ee65a93": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "3f003c432c864b67835f5afc5e0c977a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/codersuryans/CHATBOT-EXCUSS-/blob/main/CHATBOT\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Mpr7YTmwLU8x"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cMsiuMgcDPIG",
+        "outputId": "a2430703-d740-41a7-869e-af3903381422"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.12/dist-packages (4.55.2)\n",
+            "Requirement already satisfied: accelerate in /usr/local/lib/python3.12/dist-packages (1.10.0)\n",
+            "Requirement already satisfied: sentencepiece in /usr/local/lib/python3.12/dist-packages (0.2.1)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from transformers) (3.19.1)\n",
+            "Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.34.4)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.0.2)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (25.0)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers) (6.0.2)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2024.11.6)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from transformers) (2.32.4)\n",
+            "Requirement already satisfied: tokenizers<0.22,>=0.21 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.21.4)\n",
+            "Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.6.2)\n",
+            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.12/dist-packages (from transformers) (4.67.1)\n",
+            "Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate) (5.9.5)\n",
+            "Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.8.0+cu126)\n",
+            "Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (2025.3.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.14.1)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.7)\n",
+            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.13.3)\n",
+            "Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.5)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.1.6)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.80)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (9.10.2.21)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.4.1)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (11.3.0.4)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (10.3.7.77)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (11.7.1.2)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.5.4.2)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (2.27.3)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.85)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.11.1.6)\n",
+            "Requirement already satisfied: triton==3.4.0 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.4.0)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (3.4.3)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2.10)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2.5.0)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2025.8.3)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.2)\n",
+            "Requirement already satisfied: torch in /usr/local/lib/python3.12/dist-packages (2.8.0+cu126)\n",
+            "Requirement already satisfied: pillow in /usr/local/lib/python3.12/dist-packages (11.3.0)\n",
+            "Requirement already satisfied: googletrans==4.0.0rc1 in /usr/local/lib/python3.12/dist-packages (4.0.0rc1)\n",
+            "Requirement already satisfied: gTTS in /usr/local/lib/python3.12/dist-packages (2.5.4)\n",
+            "Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.12/dist-packages (0.34.4)\n",
+            "Requirement already satisfied: httpx==0.13.3 in /usr/local/lib/python3.12/dist-packages (from googletrans==4.0.0rc1) (0.13.3)\n",
+            "Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (2025.8.3)\n",
+            "Requirement already satisfied: hstspreload in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (2025.1.1)\n",
+            "Requirement already satisfied: sniffio in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (1.3.1)\n",
+            "Requirement already satisfied: chardet==3.* in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (3.0.4)\n",
+            "Requirement already satisfied: idna==2.* in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (2.10)\n",
+            "Requirement already satisfied: rfc3986<2,>=1.3 in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (1.5.0)\n",
+            "Requirement already satisfied: httpcore==0.9.* in /usr/local/lib/python3.12/dist-packages (from httpx==0.13.3->googletrans==4.0.0rc1) (0.9.1)\n",
+            "Requirement already satisfied: h11<0.10,>=0.8 in /usr/local/lib/python3.12/dist-packages (from httpcore==0.9.*->httpx==0.13.3->googletrans==4.0.0rc1) (0.9.0)\n",
+            "Requirement already satisfied: h2==3.* in /usr/local/lib/python3.12/dist-packages (from httpcore==0.9.*->httpx==0.13.3->googletrans==4.0.0rc1) (3.2.0)\n",
+            "Requirement already satisfied: hyperframe<6,>=5.2.0 in /usr/local/lib/python3.12/dist-packages (from h2==3.*->httpcore==0.9.*->httpx==0.13.3->googletrans==4.0.0rc1) (5.2.0)\n",
+            "Requirement already satisfied: hpack<4,>=3.0 in /usr/local/lib/python3.12/dist-packages (from h2==3.*->httpcore==0.9.*->httpx==0.13.3->googletrans==4.0.0rc1) (3.0.0)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from torch) (3.19.1)\n",
+            "Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/dist-packages (from torch) (4.14.1)\n",
+            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch) (1.13.3)\n",
+            "Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch) (3.5)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch) (3.1.6)\n",
+            "Requirement already satisfied: fsspec in /usr/local/lib/python3.12/dist-packages (from torch) (2025.3.0)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.80)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch) (9.10.2.21)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.4.1)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.12/dist-packages (from torch) (11.3.0.4)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.12/dist-packages (from torch) (10.3.7.77)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.12/dist-packages (from torch) (11.7.1.2)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.12/dist-packages (from torch) (12.5.4.2)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /usr/local/lib/python3.12/dist-packages (from torch) (2.27.3)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.85)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.12/dist-packages (from torch) (1.11.1.6)\n",
+            "Requirement already satisfied: triton==3.4.0 in /usr/local/lib/python3.12/dist-packages (from torch) (3.4.0)\n",
+            "Requirement already satisfied: requests<3,>=2.27 in /usr/local/lib/python3.12/dist-packages (from gTTS) (2.32.4)\n",
+            "Requirement already satisfied: click<8.2,>=7.1 in /usr/local/lib/python3.12/dist-packages (from gTTS) (8.1.8)\n",
+            "Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub) (25.0)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub) (6.0.2)\n",
+            "Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub) (4.67.1)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub) (1.1.7)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests<3,>=2.27->gTTS) (3.4.3)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests<3,>=2.27->gTTS) (2.5.0)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch) (1.3.0)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch) (3.0.2)\n"
+          ]
+        }
+      ],
+      "source": [
+        "!pip install transformers accelerate sentencepiece\n",
+        "!pip install torch pillow googletrans==4.0.0rc1 gTTS huggingface_hub\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from PIL import Image, ImageDraw, ImageFont\n",
+        "from googletrans import Translator\n",
+        "from gtts import gTTS\n",
+        "from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline\n",
+        "from googletrans import Translator\n"
+      ],
+      "metadata": {
+        "id": "akJM4rFADZZw"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#!huggingface-cli login\n",
+        "!hf auth login"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "spDAVO2MD6MT",
+        "outputId": "1d60021a-3b65-4471-d795-cdcad375d4c3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "    _|    _|  _|    _|    _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|_|_|_|    _|_|      _|_|_|  _|_|_|_|\n",
+            "    _|    _|  _|    _|  _|        _|          _|    _|_|    _|  _|            _|        _|    _|  _|        _|\n",
+            "    _|_|_|_|  _|    _|  _|  _|_|  _|  _|_|    _|    _|  _|  _|  _|  _|_|      _|_|_|    _|_|_|_|  _|        _|_|_|\n",
+            "    _|    _|  _|    _|  _|    _|  _|    _|    _|    _|    _|_|  _|    _|      _|        _|    _|  _|        _|\n",
+            "    _|    _|    _|_|      _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|        _|    _|    _|_|_|  _|_|_|_|\n",
+            "\n",
+            "    A token is already saved on your machine. Run `hf auth whoami` to get more information or `hf auth logout` if you want to log out.\n",
+            "    Setting a new token will erase the existing one.\n",
+            "    To log in, `huggingface_hub` requires a token generated from https://huggingface.co/settings/tokens .\n",
+            "Enter your token (input will not be visible): \n",
+            "Add token as git credential? (Y/n) n\n",
+            "Token is valid (permission: fineGrained).\n",
+            "The token `sury` has been saved to /root/.cache/huggingface/stored_tokens\n",
+            "Your token has been saved to /root/.cache/huggingface/token\n",
+            "Login successful.\n",
+            "The current active token is: `sury`\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import torch"
+      ],
+      "metadata": {
+        "id": "Z0EsvdYtEbwv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "model_name = \"microsoft/phi-2\"\n",
+        "\n",
+        "tokenizer = AutoTokenizer.from_pretrained(model_name)\n",
+        "model = AutoModelForCausalLM.from_pretrained(\n",
+        "    model_name,\n",
+        "    device_map=\"auto\",\n",
+        "    torch_dtype=torch.float16,\n",
+        "    trust_remote_code=True\n",
+        ")\n",
+        "\n",
+        "generator = pipeline(\n",
+        "    \"text-generation\",\n",
+        "    model=model,\n",
+        "    tokenizer=tokenizer,\n",
+        "    device_map=\"auto\"\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 66,
+          "referenced_widgets": [
+            "a926382e458242c5a0079ff2caa37500",
+            "859a9aa92552429c96551456a40e17dd",
+            "bf96c47ddf5f4fbab68a3b366cdde35f",
+            "0acb3f47ec7f483a98f998b54489a048",
+            "6a6d034b7b7d40a18ba90921d8a6c802",
+            "1c8b930b561d4a99954a5400feb31498",
+            "c052ff5a7631453c8215bd5fd5bf46ae",
+            "1ce16b63d46d46fa8191b0f7bfd4cc4c",
+            "c5206dfc8e57420f9320207f0440bd6a",
+            "64f60d468e8d4a36b078e1938ee65a93",
+            "3f003c432c864b67835f5afc5e0c977a"
+          ]
+        },
+        "id": "Jvz1UTypHrsd",
+        "outputId": "30924d6c-3f4d-4b94-afdf-a7b055d08f38"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "a926382e458242c5a0079ff2caa37500"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Device set to use cpu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "def generate_excuse_llm(context, reason, audience):\n",
+        "    prompt = f\"Write a short, polite, professional excuse message.\\nContext: {context}\\nAudience: {audience}\\nReason: {reason}\\nExcuse:\"\n",
+        "    outputs = generator(\n",
+        "        prompt,\n",
+        "        max_new_tokens=80,\n",
+        "        do_sample=True,\n",
+        "        temperature=0.7,\n",
+        "        truncation=True,\n",
+        "        pad_token_id=tokenizer.eos_token_id\n",
+        "    )\n",
+        "    text = outputs[0][\"generated_text\"]\n",
+        "\n",
+        "    excuse = text.split(\"Excuse:\")[-1].strip()\n",
+        "    if not excuse or len(excuse.split()) < 5:\n",
+        "        excuse = f\"Dear {audience}, I was delayed due to {reason}. I’ll ensure everything continues smoothly.\"\n",
+        "\n",
+        "    return excuse"
+      ],
+      "metadata": {
+        "id": "zH3AMIyFHsf5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def create_proof_image(context, excuse_text, audience=\"Boss\", patient=\"User\", doctor=\"Dr. Smith\"):\n",
+        "    img = Image.new(\"RGB\", (800, 400), color=\"white\")\n",
+        "    draw = ImageDraw.Draw(img)\n",
+        "    font = ImageFont.load_default()\n",
+        "\n",
+        "    if context == \"medical\":\n",
+        "        draw.text((20, 20), f\"Doctor: {doctor}\", fill=\"black\", font=font)\n",
+        "        draw.text((20, 60), f\"Patient: {patient}\", fill=\"black\", font=font)\n",
+        "        draw.text((20, 120), \"Prescription:\", fill=\"black\", font=font)\n",
+        "        draw.text((40, 160), excuse_text, fill=\"black\", font=font)\n",
+        "        draw.text((20, 300), \"Signature: ____________\", fill=\"black\", font=font)\n",
+        "        filename = \"prescription.png\"\n",
+        "    else:\n",
+        "        draw.text((20, 20), f\"Chat with {audience}\", fill=\"black\", font=font)\n",
+        "        draw.text((20, 80), f\"You: Sorry, I can't make it.\", fill=\"black\", font=font)\n",
+        "        draw.text((20, 120), f\"{audience}: {excuse_text}\", fill=\"black\", font=font)\n",
+        "        filename = \"chat_proof.png\"\n",
+        "\n",
+        "    img.save(filename)\n",
+        "    return filename\n"
+      ],
+      "metadata": {
+        "id": "5rxuP4kXMXTC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def speak_excuse(excuse):\n",
+        "    tts = gTTS(excuse)\n",
+        "    file_name = \"excuse.mp3\"\n",
+        "    tts.save(file_name)\n",
+        "    return file_name"
+      ],
+      "metadata": {
+        "id": "4gT6ECSqMh-n"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def translate_excuse(excuse, lang=\"hi\"):\n",
+        "    return translator.translate(excuse, dest=lang).text\n"
+      ],
+      "metadata": {
+        "id": "-9a7DrTjc2gY"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"===  AI Phi-2 Excuse Generator ===\")\n",
+        "context = input(\"Enter context (work/school/social/medical/emergency): \").strip().lower()\n",
+        "reason = input(\"Enter reason (e.g., traffic, fever, family emergency): \").strip()\n",
+        "audience = input(\"Enter audience (e.g., Boss, Teacher, Friend): \").strip().title()\n",
+        "\n",
+        "excuse = generate_excuse_llm(context, reason, audience)\n",
+        "print(\"\\nGenerated Excuse:\", excuse)\n",
+        "\n",
+        "proof_file = create_proof_image(context, excuse, audience)\n",
+        "print(f\" Proof image saved as {proof_file}\")\n",
+        "\n",
+        "voice_file = speak_excuse(excuse)\n",
+        "print(f\" Voice file saved as {voice_file}\")\n",
+        "lang = input(\"Enter language code for translation (hi=Hindi, es=Spanish, fr=French) or press Enter to skip: \").strip()\n",
+        "    if lang:\n",
+        "        translated = translate_excuse(excuse, lang)\n",
+        "        print(f\"🌐 Translated Excuse ({lang}): {translated}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7-cGtvB_MpEH",
+        "outputId": "10caf09e-f0c3-4001-aa67-79d0cba00ae6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=== 🤖 AI Phi-2 Excuse Generator ===\n",
+            "Enter context (work/school/social/medical/emergency): work\n",
+            "Enter reason (e.g., traffic, fever, family emergency): fever\n",
+            "Enter audience (e.g., Boss, Teacher, Friend): Boss\n",
+            "\n",
+            "Generated Excuse: Dear Boss, I am sorry to inform you that I will not be able to come to work today. I have a fever and I need to rest. I hope you understand and I will try to catch up on my tasks as soon as possible. Thank you for your support and patience. Best, Your name\n",
+            "📄 Proof image saved as chat_proof.png\n",
+            "🔊 Voice file saved as excuse.mp3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "jVmWJnWK_MeT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
